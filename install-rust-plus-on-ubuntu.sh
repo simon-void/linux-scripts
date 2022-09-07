@@ -11,9 +11,6 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 # a better test-runner
 cargo install cargo-nextest --locked
 
-# linter
-rustup component add clippy
-
 # install openssl support for rust, needed by sccache and when working with openssl in rust projects
 # openssl-dev is the name of the package ssl requires on Ubuntu, but it's different on Fedora (openssl-devel)
 sudo apt install libssl-dev
