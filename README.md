@@ -1,3 +1,3 @@
-# install-scripts
+# linux-scripts
 
-contains install scripts aimed at streamlining the installation of certain programs
+contains linux (probably specific to (K/X/L)Ubuntu) scripts

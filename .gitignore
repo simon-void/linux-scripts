@@ -1,2 +1,8 @@
+### IntelliJ ###
 .idea
 install-scripts.iml
+
+### VS Code ###
+.vscode/
+
+**/*.iso
