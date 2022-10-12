@@ -27,6 +27,8 @@ linker = "clang"
 rustflags = ["-C", "link-arg=-fuse-ld=mold"]
 ' > ~/.cargo/config.toml
 
-## install useful Rust components
+## install optional Rust addons
 # a better test-runner
 cargo install cargo-nextest --locked
+# wasm-pack compiles Rust to WASM to interop with js
+curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh
