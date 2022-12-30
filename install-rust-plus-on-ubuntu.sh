@@ -19,7 +19,7 @@ sudo apt install libssl-dev pkg-config
 cargo install sccache
 
 # configure global cargo options to always use sccache and mold
-printf '
+echo '
 [build]
 rustc-wrapper = ".cargo/bin/sccache"
 

@@ -13,7 +13,7 @@ syncthing --version
 
 # setup syncthing as a service started automatically at system start
 
-printf '
+echo '
 [Unit]
 Description=Syncthing - Open Source Continuous File Synchronization for %I
 Documentation=man:syncthing(1)
