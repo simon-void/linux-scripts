@@ -28,13 +28,12 @@ RestartForceExitStatus=3 4
 
 [Install]
 WantedBy=multi-user.target
-' > /etc/systemd/system/syncthing@.service
+' | sudo tee /etc/systemd/system/syncthing@.service
 
 sudo systemctl daemon-reload
 
 sudo systemctl enable syncthing@$USER
 sudo systemctl start syncthing@$USER
-sudo systemctl status syncthing@$USER
 
 #open syncthing admin-UI in browser
 
@@ -42,5 +41,7 @@ echo "opening syncthing admin-UI"
 echo "first setup a username and password, as should be prompted on the page, also enable 'Use HTTPS for GUI'"
 xdg-open https://localhost:8384/#
 
+# show syncthing status
 
+sudo systemctl status syncthing@$USER
 
