@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# stop on error
+set -e
+
 # let's make sure curl is installed
 sudo apt install curl
 
@@ -14,6 +17,9 @@ sudo apt install mold clang
 # install openssl support for rust, needed by sccache and when working with openssl in rust projects
 # libssl-dev is the name of the package ssl requires on Ubuntu, but it's different on Fedora (openssl-devel)
 sudo apt install libssl-dev pkg-config
+
+# reload .profile so that cargo is available
+source ~/.profile
 
 # sccache caches compiled libs to speedup compilation
 cargo install sccache
