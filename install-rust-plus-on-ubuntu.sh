@@ -37,5 +37,10 @@ rustflags = ["-C", "link-arg=-fuse-ld=mold"]
 ## install optional Rust addons
 # a better (nicer UI and often faster) test-runner (instead of `cargo test` use `cargo nextest run` to execute your tests)
 cargo install cargo-nextest --locked
+# run cargo commands in the background to reduce perceived compilation time
+# e.g. `cargo watch` only triggers `cargo check` which is the default
+# e.g. `cargo watch -x check -x test` triggers first `cargo check` followed by `cargo test`
+# e.g. `cargo watch -x check -s 'cargo nextest run'` triggers first `cargo check` followed by `cargo nextest run`
+cargo install cargo-watch
 # wasm-pack compiles Rust to WASM to interop with js (more on how to use it here: https://rustwasm.github.io/docs/wasm-pack/quickstart.html)
 curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh
