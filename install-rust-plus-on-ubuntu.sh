@@ -37,6 +37,8 @@ rustflags = ["-C", "link-arg=-fuse-ld=mold"]
 ## install optional Rust addons
 # a better (nicer UI and often faster) test-runner (instead of `cargo test` use `cargo nextest run` to execute your tests)
 cargo install cargo-nextest --locked
+# scans for security vulnerabilities in your dependencies
+cargo install cargo-audit
 # run cargo commands in the background to reduce perceived compilation time
 # e.g. `cargo watch` only triggers `cargo check` which is the default
 # e.g. `cargo watch -x check -x test` triggers first `cargo check` followed by `cargo test`
