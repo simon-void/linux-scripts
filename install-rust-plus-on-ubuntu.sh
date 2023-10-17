@@ -1,7 +1,4 @@
-#!/bin/bash
-
-# stop on error
-set -e
+#!/bin/bash -e
 
 # let's make sure curl is installed
 sudo apt install curl

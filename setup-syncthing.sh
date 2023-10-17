@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -e
 
 # Setting up Syncthing on an ubuntu machine using systemd.
 # Info compiled from https://computingforgeeks.com/how-to-install-and-use-syncthing-on-ubuntu/
