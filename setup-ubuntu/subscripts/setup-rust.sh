@@ -1,19 +1,16 @@
 #!/bin/bash -e
 
-# let's make sure curl is installed
-sudo apt install curl
-
 # install Rust
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 # Rust needs a linker
 # install mold, since it's the fastest linker, see https://github.com/rui314/mold
 # mold requires clang which provides "a language front-end and tooling infrastructure for languages in the C language family"
-sudo apt install mold clang
+sudo aptitude install mold clang
 
 # install openssl support for rust, needed by sccache and when working with openssl in rust projects
 # libssl-dev is the name of the package ssl requires on Ubuntu, but it's different on Fedora (openssl-devel)
-sudo apt install libssl-dev pkg-config
+sudo aptitude install libssl-dev pkg-config
 
 # reload .profile so that cargo is available
 source ~/.profile

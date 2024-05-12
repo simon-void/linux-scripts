@@ -4,7 +4,7 @@
 # Info compiled from https://computingforgeeks.com/how-to-install-and-use-syncthing-on-ubuntu/
 
 # install syncthing
-sudo apt install curl apt-transport-https
+sudo apt install apt-transport-https
 curl -s https://syncthing.net/release-key.txt | sudo apt-key add -
 echo "deb https://apt.syncthing.net/ syncthing release" | sudo tee /etc/apt/sources.list.d/syncthing.list
 sudo apt-get update
