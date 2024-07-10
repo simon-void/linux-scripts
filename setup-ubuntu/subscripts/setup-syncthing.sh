@@ -1,14 +1,16 @@
 #!/bin/bash -e
 
+echo "###### install syncthing"
+
 # Setting up Syncthing on an ubuntu machine using systemd.
 # Info compiled from https://computingforgeeks.com/how-to-install-and-use-syncthing-on-ubuntu/
 
 # install syncthing
-sudo apt install apt-transport-https
+sudo aptitude install apt-transport-https
 curl -s https://syncthing.net/release-key.txt | sudo apt-key add -
 echo "deb https://apt.syncthing.net/ syncthing release" | sudo tee /etc/apt/sources.list.d/syncthing.list
-sudo apt-get update
-sudo apt-get install syncthing
+sudo aptitude update
+sudo aptitude install syncthing
 syncthing --version
 
 # setup syncthing as a service started automatically at system start

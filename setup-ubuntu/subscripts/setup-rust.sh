@@ -1,5 +1,7 @@
 #!/bin/bash -e
 
+echo "###### install rust(up)/cargo"
+
 # install Rust
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
@@ -16,7 +18,7 @@ sudo aptitude install libssl-dev pkg-config
 source ~/.profile
 
 # sccache caches compiled libs to speedup compilation
-cargo install sccache
+cargo install sccache --locked
 
 # configure global cargo options to always use sccache and mold
 echo '
