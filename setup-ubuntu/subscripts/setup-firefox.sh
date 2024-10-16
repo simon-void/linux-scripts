@@ -1,7 +1,7 @@
 #!/bin/bash -e
 
 cd ~/progs
-mkdir firefox
+mkdir -p firefox
 cd firefox
 
 FIREFOX_ARCHIVE=firefox.tar.bz2
@@ -13,6 +13,8 @@ tar -xvjf $FIREFOX_ARCHIVE --checkpoint=.100
 rm -f $FIREFOX_ARCHIVE
 
 FIREFOX_FOLDER=$(ls | head -n 1)
+
+mkdir -p ~/.local/share/applications
 
 echo '
 [Desktop Entry]

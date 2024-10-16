@@ -3,13 +3,14 @@
 sudo apt install aptitude
 sudo aptitude install curl -y
 
-#mkdir ~/progs
-mkdir ~/workspace/html
-mkdir ~/workspace/jvm
-mkdir ~/workspace/rust
-#mkdir ~/workspace/scripts
+mkdir -p ~/progs
+mkdir -p ~/synced
+mkdir -p ~/workspace/html
+mkdir -p ~/workspace/jvm
+mkdir -p ~/workspace/rust
+mkdir -p ~/workspace/scripts
 
-sudo snap install chomium
+sudo snap install chromium
 sudo aptitude install cpu-x -y
 sudo snap install freetube
 sudo aptitude install gimp -y
@@ -23,7 +24,7 @@ sudo aptitude install steam -y
 ./subscripts/setup-intellij.sh
 ./subscripts/setup-signal.sh
 #./subscripts/setup-syncthing.sh
-#./subscripts/setup-codecs.sh
+./subscripts/setup-codecs.sh
 ./subscripts/setup-vpn.sh
 ./subscripts/setup-grub-customizer.sh
 
