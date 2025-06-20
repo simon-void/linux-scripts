@@ -21,7 +21,6 @@ sudo aptitude install steam -y
 ./subscripts/setup-firefox.sh
 ./subscripts/setup-java.sh
 ./subscripts/setup-rust.sh
-./subscripts/setup-intellij.sh
 ./subscripts/setup-signal.sh
 #./subscripts/setup-syncthing.sh
 ./subscripts/setup-codecs.sh
