@@ -32,6 +32,7 @@ sudo flatpak install Steam com.valvesoftware.Steam -y
 ./subscripts/setup-git.sh
 ./subscripts/setup-java.sh
 ./subscripts/setup-rust.sh
+./subscripts/prepare-intellij.sh
 #./subscripts/setup-firefox.sh
 #./subscripts/setup-signal.sh
 #./subscripts/setup-syncthing.sh
