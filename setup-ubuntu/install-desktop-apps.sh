@@ -1,6 +1,6 @@
 #!/bin/bash -e
 
-sudo apt install aptitude
+sudo apt install aptitude -y
 sudo aptitude install curl -y
 
 mkdir -p ~/progs
@@ -18,15 +18,14 @@ sudo aptitude install keepassxc -y
 sudo aptitude install thunderbird -y
 sudo aptitude install steam -y
 
-./subscripts/setup-firefox.sh
+./subscripts/setup-git.sh
 ./subscripts/setup-java.sh
 ./subscripts/setup-rust.sh
+./subscripts/setup-firefox.sh
 ./subscripts/setup-signal.sh
 #./subscripts/setup-syncthing.sh
 ./subscripts/setup-codecs.sh
 ./subscripts/setup-vpn.sh
 ./subscripts/setup-grub-customizer.sh
 
-git config --global user.email "simon.void@gmx.de"
-git config --global user.name "SSchroeder"
  
