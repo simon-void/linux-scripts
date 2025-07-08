@@ -44,6 +44,8 @@ echo '
         enabled = true
         autoupdate = true
 [core]
+        # ensure line endings in files you checkout are correct for linux
+        autocrlf = input
         excludesfile = ~/.gitignore
 [rebase]
         autoSquash = true
