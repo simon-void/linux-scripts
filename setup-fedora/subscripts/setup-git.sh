@@ -58,7 +58,7 @@ echo '
         # fsmonitor = true
         # untrackedCache = true
 [merge]
-        # (just 'diff3' if git version < 2.3)
+        # (just 'diff3' if git version < 2.35)
         conflictstyle = zdiff3
 [pull]
         rebase = true
